@@ -11,9 +11,9 @@ const ShowBook = () => {
 
   useEffect(() => {
     setLoading(true);
-    console.log(`http://localhost:5555/books/${id}`)
+    console.log(`https://book-store-backend-q2th.onrender.com/books/${id}`)
        axios
-      .get(`http://localhost:5555/books/${id}`)
+      .get(`https://book-store-backend-q2th.onrender.com/books/${id}`)
       .then((response) => {
           setBook(response.data.toString());
         //console.log(response.data)
