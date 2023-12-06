@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Spinner from "../components/spinner";
+//import Spinner from "../components/spinner";
 import { Link } from "react-router-dom";
 import {AiOutlineEdit} from "react-icons/ai"
 import {BsInfoCircle} from "react-icons/bs"
@@ -35,7 +35,7 @@ const Home = () => {
                 </Link>
             </div>
             {loding ?(
-                <Spinner />
+                <h1>Loading</h1>
             ) : (
                 <table className="w-full border-separate border-spacing-2">
                     <thead>
